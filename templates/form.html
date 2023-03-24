@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/project/files/landingpage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bo">
+    <div class="form_image">
+        <img src="/project/image/form.png" alt="">
+    </div>
+    <div class="form">
+        <h3>Form Details:</h3>
+    <form action="/predict" method=post enctype=multipart/form-data class="needs-validation" >
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" class="form-control" id="age" name="age" placeholder="" value="" required="">
+          </div>
+
+          <div class="col-sm-6">
+            <label for="sex" class="form-label">Sex</label>
+            <select class="form-select" id="sex" name="sex" required="">
+              <option value="0">Male</option>
+              <option value="1">Female</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label for="height" class="form-label">Height</label>
+            <input type="number" class="form-control" id="height" name="height">
+          </div>
+          <div class="col-12">
+            <label for="weight" class="form-label">Weight</label>
+            <input type="number" class="form-control" id="weight" name="weight">
+          </div>
+
+          <div class="col-md-5">
+            <label for="device" class="form-label">Devices used for recording:</label>
+            <select class="form-select" id="device" name="device">
+                <option value="0">CS100    3</option>
+                <option value="1">CS-12</option>
+                <option value="2">AT-6 C 5.5</option>
+                <option value="3">CS-12   E</option>
+                <option value="4">AT-6     6</option>
+                <option value="5">AT-60    3</option>
+                <option value="6">AT-6 C 5.8</option>
+                <option value="7">AT-6 C</option>
+                <option value="8">AT-6 C 5.0</option>
+                <option value="9">AT-6 C 5.3</option>
+                <option value="10">AT-6 C 5.6</option>
+            </select>
+          </div>
+
+          <div class="col-md-4">
+            <label for="heart_axis" class="form-label">Heart axis:</label>
+            <select class="form-select" id="heart_axis" name="heart_axis">
+                <option value="0">nan</option>
+                <option value="1">LAD</option>
+                <option value="2">AXL</option>
+                <option value="3">MID</option>
+                <option value="4">RAD</option>
+                <option value="5">ALAD</option>
+                <option value="6">AXR</option>
+            </select>
+          </div>
+
+        <!-- <hr class="my-4"> -->
+        <div class="col-12">
+            <label for="validated_by" class="form-label">Validated by?</label>
+            <input type="validated_by" class="form-control" id="validated_by" name="validated_by">
+        </div>
+        <div class="col-md-4">
+            <label for="second_op" class="form-label">Second Opinion?</label>
+            <select class="form-select" id="second_opinion" name="second_opinion">
+                <option value="0">No</option>
+            <option value="1">Consulted</option>
+            </select>
+        </div>
+
+        <div class="col-md-5">
+            <label for="validated_by_human" class="form-label">Report validated by human?</label>
+            <select class="form-select" id="validated_by_human" name="validated_by_human">
+                <option value="0">False</option>
+                <option value="1">True</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="pace_maker" class="form-label">Used a Pace Maker?</label>
+            <select class="form-select" id="pace_maker" name="pace_maker">
+                <option value="0">Missing</option>
+            <option value="1">Used a pacemaker</option>
+            </select>
+        </div>
+
+        <div class="col-md-5">
+            <label for="ECG file" class="form-label" for="customFile">ECG file:</label>
+            <input type="file" class="form-control" id="file" name="file">
+        </div>
+        <hr class="my-4">
+
+        <button  type="submit">Upload</button>
+      </form>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

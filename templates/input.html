@@ -1,0 +1,70 @@
+<!doctype html>
+    <title>ECG pred</title>
+    
+    <form action="/predict" method=post enctype=multipart/form-data>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age">
+    
+    <label for="sex">sex:</label>
+    <select id="sex" name="sex">
+      <option value="0">Male</option>
+      <option value="1">Female</option>
+    </select>
+    
+    <label for="height">Height:</label>
+    <input type="number" id="height" name="height">
+    
+    <label for="weight">Weight:</label>
+    <input type="number" id="weight" name="weight">
+    
+    <label for="device">Type od device used for recording:</label>
+    <select id="device" name="device">
+        <option value="0">CS100    3</option>
+        <option value="1">CS-12</option>
+        <option value="2">AT-6 C 5.5</option>
+        <option value="3">CS-12   E</option>
+        <option value="4">AT-6     6</option>
+        <option value="5">AT-60    3</option>
+        <option value="6">AT-6 C 5.8</option>
+        <option value="7">AT-6 C</option>
+        <option value="8">AT-6 C 5.0</option>
+        <option value="9">AT-6 C 5.3</option>
+        <option value="10">AT-6 C 5.6</option>
+    </select>
+    
+    <label for="heart_axis">Heart axis:</label>
+    <select id="heart_axis" name="heart_axis">
+        <option value="0">nan</option>
+        <option value="1">LAD</option>
+        <option value="2">AXL</option>
+        <option value="3">MID</option>
+        <option value="4">RAD</option>
+        <option value="5">ALAD</option>
+        <option value="6">AXR</option>
+    </select>
+    
+    <label for="validated_by">Validated by?</label>
+    <input type="validated_by" id="validated_by" name="validated_by">
+    
+    <label for="second_op">Second Opinion?</label>
+    <select id="second_opinion" name="second_opinion">    
+        <option value="0">No</option>
+        <option value="1">Consulted</option>
+    </select>
+    
+    <label for="validated_by_human">Report validated by human?</label>
+    <select id="validated_by_human" name="validated_by_human">    
+        <option value="0">False</option>
+        <option value="1">True</option>
+    </select>
+    
+    <label for="pace_maker">Used a Pace Maker?</label>
+    <select id="pace_maker" name="pace_maker">    
+        <option value="0">Missing</option>
+        <option value="1">Used a pacemaker</option>
+    </select>
+    
+    <label for="ECG file">ECG file:</label>
+    <p><input type=file name=file><input type=submit value=Upload>
+
+    </form>
